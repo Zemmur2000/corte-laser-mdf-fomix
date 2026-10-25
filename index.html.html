@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cómo cortar fomix, MDF y otros materiales</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
+<style>
+:root{--bg:#E8F0EA;--grid:#D3E1D7;--ink:#17301F;--soft:#4B6354;--card:#F6FAF7;--line:#B9CCBF;--pink:#FF5C8A;--yellow:#FFC93C;--teal:#0E8F82;--warn:#B3261E;--warnbg:#FDECEA;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10211A;--grid:#193027;--ink:#EAF4ED;--soft:#9DB5A5;--card:#173024;--line:#2B4A39;--teal:#35D0C0;--warn:#FF9A92;--warnbg:#3A1E1C}}
+:root[data-theme="dark"]{--bg:#10211A;--grid:#193027;--ink:#EAF4ED;--soft:#9DB5A5;--card:#173024;--line:#2B4A39;--teal:#35D0C0;--warn:#FF9A92;--warnbg:#3A1E1C}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Bricolage Grotesque',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:17px;line-height:1.6;
+background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+a{color:var(--teal)}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 56px}
+header{padding:44px 0 20px}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.05;font-weight:800;margin:0 0 14px;letter-spacing:-.02em}
+.lead{font-size:19px;color:var(--soft);margin:0;max-width:40em}
+h2{font-size:clamp(26px,4vw,34px);line-height:1.15;margin:52px 0 12px;letter-spacing:-.01em}
+h3{margin:0 0 10px;font-size:22px}
+p{margin:0 0 14px;max-width:44em}
+nav.toc{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:16px 20px;margin-top:24px}
+nav.toc b{display:block;margin-bottom:6px}
+nav.toc ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px 18px}
+.tablewrap{overflow-x:auto;border-radius:12px;border:2px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:640px;background:var(--card);font-size:15px}
+th,td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-weight:800}
+.mat{background:var(--card);border:2px solid var(--line);border-left-width:10px;border-radius:16px;padding:22px;margin:0 0 22px}
+.m1{border-left-color:var(--pink)}.m2{border-left-color:var(--yellow)}.m3{border-left-color:var(--teal)}.m4{border-left-color:#FF8A3D}.m5{border-left-color:#8A6CFF}
+dl{margin:0;display:grid;gap:12px}
+dt{font-weight:800}
+dd{margin:2px 0 0;color:var(--soft)}
+dd ul{margin:4px 0 0;padding-left:20px}
+.alert{background:var(--warnbg);border:2px solid var(--warn);border-radius:12px;padding:14px 16px;margin:14px 0}
+.alert b{color:var(--warn)}
+ol,ul.plain{padding-left:22px;max-width:44em}
+li{margin-bottom:6px}
+footer{margin-top:44px;color:var(--soft);font-size:15px}
+@media print{body{background:#fff;color:#000}nav.toc{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Cómo cortar fomix, MDF y otros materiales</h1>
+  <p class="lead">Guía para elegir la herramienta, preparar el material y obtener cortes limpios y seguros en cada caso.</p>
+  <nav class="toc" aria-label="Contenido">
+    <b>Contenido</b>
+    <ul>
+      <li><a href="#intro">Introducción</a></li>
+      <li><a href="#comparar">Comparación</a></li>
+      <li><a href="#fomix">Fomix</a></li>
+      <li><a href="#mdf">MDF</a></li>
+      <li><a href="#acrilico">Acrílico</a></li>
+      <li><a href="#carton">Cartón</a></li>
+      <li><a href="#triplex">Triplex</a></li>
+      <li><a href="#seguridad">Seguridad</a></li>
+      <li><a href="#pasos">Método general</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section id="intro">
+  <h2>Introducción</h2>
+  <p>Un buen corte depende de tres cosas: la herramienta correcta para el material, una preparación cuidadosa y los parámetros adecuados (velocidad, presión, potencia). Un mismo error, como cortar demasiado lento, produce resultados distintos según el material: el fomix se funde, el MDF se quema y el acrílico se fisura.</p>
+  <p>Los valores de esta guía son orientativos. Cada máquina y cada lote de material se comportan distinto, así que prueba siempre en un retazo antes de cortar la pieza final.</p>
+</section>
+
+<section id="comparar">
+  <h2>Comparación rápida</h2>
+  <div class="tablewrap">
+    <table>
+      <tr><th>Material</th><th>Corte manual</th><th>Corte con máquina</th><th>Dificultad</th><th>Riesgo principal</th></tr>
+      <tr><td>Fomix (espuma EVA)</td><td>Tijera, cutter</td><td>Plotter, láser CO2, router CNC</td><td>Baja</td><td>Bordes fundidos o desgarrados</td></tr>
+      <tr><td>MDF</td><td>Sierra de mano, caladora</td><td>Láser CO2 (delgado), router CNC</td><td>Media</td><td>Polvo fino y bordes quemados</td></tr>
+      <tr><td>Acrílico</td><td>Cutter de ranurar (hasta unos 3 mm), sierra fina</td><td>Láser CO2, router CNC</td><td>Media</td><td>Fisuras y fusión por calor</td></tr>
+      <tr><td>Cartón y cartulina</td><td>Cutter, guillotina</td><td>Plotter, troquel, láser</td><td>Baja</td><td>Bordes rotos e incendio en láser</td></tr>
+      <tr><td>Triplex (contrachapado)</td><td>Sierra de mano, caladora</td><td>Láser CO2 (delgado), router CNC</td><td>Media</td><td>Astillado de las capas</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="materiales">
+  <h2>Corte por material</h2>
+
+  <article class="mat m1" id="fomix">
+    <h3>Fomix (espuma EVA)</h3>
+    <dl>
+      <div><dt>Qué es</dt><dd>Lámina de espuma flexible, ligera y blanda, de unos 2 a 10 mm. Se usa en manualidades, disfraces, rótulos y decoración.</dd></div>
+      <div><dt>Herramientas</dt><dd><ul><li>Tijera afilada o cutter con cuchilla nueva, para piezas pequeñas.</li><li>Plotter de corte o troquel, para series repetidas.</li><li>Láser CO2 de baja potencia o router CNC con fresa de una gota, para formas complejas.</li></ul></dd></div>
+      <div><dt>Cómo cortar</dt><dd><ul><li>Apoya la lámina sobre una base de corte y fíjala con cinta.</li><li>Con cutter, usa regla metálica y varias pasadas suaves en lugar de una sola con fuerza.</li><li>Cambia la cuchilla apenas deje de cortar limpio: una cuchilla roma desgarra la espuma.</li><li>Con láser, usa potencia baja y velocidad alta, y haz pruebas en un retazo.</li></ul></dd></div>
+      <div><dt>Errores comunes</dt><dd>Presionar demasiado y deformar el borde, usar cuchilla gastada, o cortar con láser a velocidad lenta, lo que funde y ennegrece el borde.</dd></div>
+    </dl>
+    <div class="alert"><b>Seguridad:</b> al cortar con láser el fomix genera humo y olor fuerte. Trabaja con extracción o ventilación abundante y no dejes la máquina sin vigilancia.</div>
+  </article>
+
+  <article class="mat m2" id="mdf">
+    <h3>MDF (tablero de fibra de densidad media)</h3>
+    <dl>
+      <div><dt>Qué es</dt><dd>Tablero hecho de fibras de madera y resinas. Es liso y estable, pero absorbe humedad por los bordes y produce polvo muy fino.</dd></div>
+      <div><dt>Herramientas</dt><dd><ul><li>Sierra de mesa o circular con disco de dientes finos, para cortes rectos.</li><li>Caladora con hoja de dientes finos, para curvas.</li><li>Router CNC con fresa de carburo, para piezas precisas.</li><li>Láser CO2, solo en espesores delgados (alrededor de 3 mm).</li></ul></dd></div>
+      <div><dt>Cómo cortar</dt><dd><ul><li>Sujeta bien el tablero para que no vibre.</li><li>Pega cinta de enmascarar sobre la línea de corte para reducir el astillado.</li><li>Mantén un avance constante: ir muy lento quema el borde.</li><li>Sella los bordes con sellador o pintura antes de acabar, porque absorben mucho.</li></ul></dd></div>
+      <div><dt>Errores comunes</dt><dd>Bordes quemados por avanzar despacio, astillado en la cara de salida, y desgaste rápido de la herramienta por el contenido de resinas.</dd></div>
+    </dl>
+    <div class="alert"><b>Seguridad:</b> el polvo de MDF es muy fino y las resinas pueden liberar formaldehído. Usa mascarilla FFP2 o N95, gafas, protección auditiva y extracción de polvo. Corta en un lugar ventilado.</div>
+  </article>
+
+  <article class="mat m3" id="acrilico">
+    <h3>Acrílico (PMMA)</h3>
+    <dl>
+      <div><dt>Qué es</dt><dd>Plástico rígido y transparente o de color. Existe fundido (cast) y extruido, y se comportan distinto al cortarlos.</dd></div>
+      <div><dt>Herramientas</dt><dd><ul><li>Láser CO2: deja un borde brillante y es el método más usado.</li><li>Router CNC con fresa de una gota, que evacua bien la viruta.</li><li>Cutter de ranurar para láminas delgadas: se marca varias veces y se parte sobre un borde.</li><li>Sierra de dientes muy finos para cortes rectos.</li></ul></dd></div>
+      <div><dt>Cómo cortar</dt><dd><ul><li>Deja el film protector puesto para evitar rayones y retíralo al final.</li><li>Fija la lámina sin apretar de más, para no generar tensiones.</li><li>Con router, evita la fricción excesiva: el plástico se derrite y se pega a la fresa.</li></ul></dd></div>
+      <div><dt>Errores comunes</dt><dd>Fisuras por tensión o calor, bordes derretidos por velocidad insuficiente y rayones por apoyar la lámina sobre superficies sucias.</dd></div>
+    </dl>
+    <div class="alert"><b>Seguridad:</b> el láser produce humo irritante. Usa extracción. No confundas el acrílico con PVC o policarbonato, que no deben cortarse con láser.</div>
+  </article>
+
+  <article class="mat m4" id="carton">
+    <h3>Cartón y cartulina</h3>
+    <dl>
+      <div><dt>Qué es</dt><dd>Material de fibras de papel, desde cartulina delgada hasta cartón corrugado grueso.</dd></div>
+      <div><dt>Herramientas</dt><dd>Cutter con cuchilla afilada, guillotina, plotter de corte, troquel o láser CO2 con potencia baja.</dd></div>
+      <div><dt>Cómo cortar</dt><dd><ul><li>Usa regla metálica y una base de corte.</li><li>En cartón corrugado, corta en varias pasadas para no aplastar las ondas.</li><li>Cambia la cuchilla con frecuencia, porque el papel la desafila rápido.</li></ul></dd></div>
+      <div><dt>Errores comunes</dt><dd>Bordes deshilachados por cuchilla roma y aplastamiento del corrugado por exceso de presión.</dd></div>
+    </dl>
+    <div class="alert"><b>Seguridad:</b> el papel y el cartón se incendian con facilidad en el láser. Nunca dejes la máquina sin vigilancia y ten un extintor cerca.</div>
+  </article>
+
+  <article class="mat m5" id="triplex">
+    <h3>Triplex (madera contrachapada)</h3>
+    <dl>
+      <div><dt>Qué es</dt><dd>Tablero formado por capas finas de madera pegadas con las fibras cruzadas. Es más resistente que el MDF, pero sus capas pueden astillarse.</dd></div>
+      <div><dt>Herramientas</dt><dd>Sierra circular o de mesa con disco de dientes finos, caladora, router CNC o láser CO2 en espesores delgados.</dd></div>
+      <div><dt>Cómo cortar</dt><dd><ul><li>Corta con la cara buena hacia abajo si usas sierra circular o de mesa, y hacia arriba si usas caladora.</li><li>Marca la línea con cuchilla o cinta para evitar astillas.</li><li>Para láser, elige triplex apto para corte láser: algunos pegamentos dificultan el corte.</li></ul></dd></div>
+      <div><dt>Errores comunes</dt><dd>Astillado de la capa exterior, hojas con dientes gruesos y cortes irregulares por no fijar el tablero.</dd></div>
+    </dl>
+    <div class="alert"><b>Seguridad:</b> usa gafas y mascarilla contra el polvo, y protección auditiva con sierras eléctricas.</div>
+  </article>
+</section>
+
+<section id="seguridad">
+  <h2>Seguridad general</h2>
+  <ul class="plain">
+    <li>Usa gafas de protección en cualquier corte, y guantes de corte con cuchillas.</li>
+    <li>Mantén las manos fuera de la línea de corte y sujeta la pieza con prensas o cinta.</li>
+    <li>Trabaja con ventilación o extracción cuando hay polvo, humo o vapores.</li>
+    <li>En corte láser, nunca cortes PVC, vinilo ni policarbonato: liberan gases tóxicos y dañan la máquina.</li>
+    <li>Desconecta las herramientas eléctricas antes de cambiar hojas, discos o fresas.</li>
+    <li>Ten a mano un extintor y un botiquín.</li>
+  </ul>
+</section>
+
+<section id="pasos">
+  <h2>Método general en seis pasos</h2>
+  <ol>
+    <li><b>Define el material y el espesor.</b> Esto decide la herramienta.</li>
+    <li><b>Prepara el diseño.</b> Mide dos veces, deja margen para el ancho del corte y optimiza el uso del material.</li>
+    <li><b>Fija la pieza.</b> Una pieza que se mueve da cortes torcidos y es peligrosa.</li>
+    <li><b>Haz una prueba</b> en un retazo del mismo material para ajustar velocidad, potencia o presión.</li>
+    <li><b>Corta con avance constante</b> y sin forzar la herramienta.</li>
+    <li><b>Revisa y termina.</b> Lija o limpia los bordes, retira rebabas y sella si el material lo necesita.</li>
+  </ol>
+</section>
+</main>
+
+<footer>
+  <p>Documento de referencia general. Consulta siempre el manual de tu equipo y las fichas técnicas del material.</p>
+</footer>
+</div>
+</body>
+</html>
